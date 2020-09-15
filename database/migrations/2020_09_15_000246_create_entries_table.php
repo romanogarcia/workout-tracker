@@ -19,14 +19,6 @@ class CreateEntriesTable extends Migration
             $table->unsignedBigInteger('exercise_id')->index(); //name
             $table->integer('repetitions')->nullable();
             $table->timestamps();
-
-            $table->foreign('workout_id')
-            ->references('id')->on('workouts')
-            ->onDelete('cascade');
-
-            $table->foreign('exercise_id')
-            ->references('id')->on('exercises')
-            ->onDelete('cascade');
         });
     }
 

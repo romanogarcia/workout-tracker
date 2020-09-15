@@ -23,15 +23,14 @@ class EntriesTableSeeder extends Seeder
             $n = 1;
             $x = 1;
             foreach ($data as $key=>$val){
-                echo PHP_EOL . $val . ' '. $n . ' x ' . $x .  PHP_EOL;
                 if ($n == 6){
                     $n = 1;
                     $x = 1;
                 }
                     
                 $entry = new Entry();
-                $entry->workout_id = $i;
-                $entry->exercise_id = $x;
+                $entry->workout_id = intval($i);
+                $entry->exercise_id = intval($x);
                 $entry->repetitions = $data[$n];
                 $entry->save();
                 $x++;
