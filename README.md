@@ -1,12 +1,13 @@
 ## Workout Tracker
 
 By Romano Garcia
+
 Steps:
 
 Clone the repository
 - git clone https://github.com/romanogarcia/workout-tracker.git
 
-Create the env file
+Create the env file and add your user and db password
 - cp .env.example .env
 
 Update/install the vendor folder
@@ -20,3 +21,6 @@ Run migration
 
 Run DB seed
 - php artisan db:seed
+
+Run server
+- php artisan serve
