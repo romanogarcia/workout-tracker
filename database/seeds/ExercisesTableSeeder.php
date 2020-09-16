@@ -25,7 +25,7 @@ class ExercisesTableSeeder extends Seeder
         foreach ($data_array as $items) {
             if ($i == 0) {
                 $array_key = $items; // get first as name
-            } else if ($i == $len - 1) {
+            } else if ($i == 1) {
                 $array_value = $items; // get last element as current
                 $rows = array_combine( $array_key, $array_value );
             }

@@ -24,3 +24,20 @@ Run DB seed
 
 Run server
 - php artisan serve
+
+
+
+
+***** Version 2 Instructions ****** 
+
+Run the update composer to install the require package
+- composer require doctrine/dbal
+
+Run migration again
+- php artisan migrate
+
+Refresh the migration and seeds
+- php artisan migrate:refresh --seed
+
+Run server again
+- php artisan serve
