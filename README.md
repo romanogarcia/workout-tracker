@@ -30,6 +30,9 @@ Run server
 
 ***** Version 2 Instructions ****** 
 
+Update your local branch
+- git pull
+
 Run the update composer to install the require package
 - composer require doctrine/dbal
 
